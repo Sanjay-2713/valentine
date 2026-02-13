@@ -49,13 +49,18 @@ button {
 
 <body>
 
-<audio autoplay loop>
-  <source src="papa.mpeg" type="audio/mpeg">
+<audio id="bgmusic" loop>
+  <source src="papa.mp3" type="audio/mpeg">
 </audio>
 
+<script>
+document.body.addEventListener("click", function() {
+  document.getElementById("bgmusic").play();
+});
+</script>
 <h1>Happy Valentine's Day 💖</h1>
 
-<h2 class="glow">Dear Papa 🐻</h2>
+<h2 class="glow">Dear Papa 🌸</h2>
 
 <img src="pppp.jpeg" width="250"
 style="display:block; margin:20px auto; border-radius:20px; box-shadow:0 0 25px #ff4d6d;">
@@ -69,7 +74,7 @@ style="display:block; margin:20px auto; border-radius:20px; box-shadow:0 0 25px 
 <script>
 function showMessage() {
   document.getElementById("message").innerHTML =
-  "Nearly 4 years of togetherness 🫂 Love you more and more 😘💖 Within 3 years husband and wife 😘 Forever together 💞";
+  "Nearly 4 years of togetherness 🫂 love you more and more thangoo 😻😻 my sunshine my happiness my everything 😘💖 within 3 years we celebrate the valentine's day husband and wife 😘 love you 😘 miss you ❤️ forever together 💞";
 }
 
 setInterval(function(){
